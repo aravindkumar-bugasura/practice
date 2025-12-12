@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunc(){
+            document.getElementById('p1').innerHTML='Welcome!!'
+        }
+    </script>
+</head>
+<body>
+    <p id="p1" >This is para tag</p>
+    <button onclick="myfunc()">try it!</button><br><br>
+    <button type="button" onclick='document.getElementById("p1").innerHTML="Hello Aravind!"'>click me!</button><br>
+
+    <button onclick='document.getElementById("b1").src="https://www.w3schools.com/js/pic_bulbon.gif"' >Turn on</button>
+
+    <img id ="b1" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" >
+
+    
+
+    <button onclick="document.getElementById('b1').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off</button>
+
+    <p id="add">Add of two num</p>
+    <button onclick="document.getElementById('add').innerHTML=add(2,3)" >add</button>
+
+    <p id="sub">Add of two sub</p>
+    <button onclick="document.getElementById('sub').innerHTML=sub(2,3)" >sub</button>
+
+    <p id="mul">Add of two sub</p>
+    <button onclick="document.getElementById('mul').innerHTML=mul(2,3)" >mul</button>
+    
+    <script src="./prac1.js"></script>
+</body>
+</html>
